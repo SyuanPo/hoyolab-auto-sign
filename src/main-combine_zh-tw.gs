@@ -178,7 +178,7 @@ function postLine(data) {
     payload: payload,
     contentType: 'application/x-www-form-urlencoded',
     headers: {
-      Authorization: Bearer ${lineToken}
+      Authorization: `Bearer ${lineToken}`
     },
     muteHttpExceptions: true
   };
