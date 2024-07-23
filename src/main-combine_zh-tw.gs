@@ -34,7 +34,7 @@ const urlDict = {
 
 async function main(){
   const messages = await Promise.all(profiles.map(autoSignFunction));
-  const hoyolabResp = ${messages.join('\n\n')}
+  const hoyolabResp = `${messages.join('\n\n')}`
   console.log(hoyolabResp);
 
   postWebhook(hoyolabResp);
